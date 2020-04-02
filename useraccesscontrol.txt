@@ -1,0 +1,30 @@
+in the breadcrumb need to add href like this
+<?=base_url('Main_page/display_page/report_home/'.$token);?>
+-if you want to come back to main navigation home "report_home", sales_home etc.
+
+Audit - Reports
+
+Access code
+0 - Super User
+1 - Administrator
+2 - Accounting Manager
+3 - Accounting Staff (Collection)
+4 - Auditing Supervisor
+5 - Auditing Staff
+6 - Encoder
+7 - Inventory Staff
+8 - Manufacturing Staff
+9 - Monitoring Staff
+10 - Purchasing Manager
+11 - Purchasing Staff
+12 - Accounting Staff (Disbursement)
+13 - Cashier
+14 - Inventory Staff (Package)
+15 - Releasing Staff
+
+
+UNIT 1-B 3/F THE FORT STRIP 7TH AVE., COR. 28TH ST., FORT BONIFACIO, CITY OF TAGUIG
+
+
+
+8_supplierfiles

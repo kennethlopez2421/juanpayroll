@@ -1,0 +1,288 @@
+body {
+ background-image: url("bg/loginbg3.jpg");
+ /* background-color: #cccccc; */
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ position: relative;
+ height: 100vh;
+}
+
+.loader{
+  display: none;
+}
+
+video, #mycanvas{
+  width: inherit !important;
+  border: 1px solid gainsboro;
+}
+
+#video_wrapper{
+  position: relative
+  padding: 0;
+}
+
+#video_wrapper canvas {
+  position: absolute;
+  padding:0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #ffffff;
+}
+
+/* position: absolute;
+left: 58%;
+top: 56%;
+transform: translate(-57%, -52%); */
+
+.btn-nav.active{
+  background-color: #222;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+#rf_wrapper{
+  border:1px solid #222;
+  border-radius: 3px;
+}
+
+.input-box{
+  border: 1px solid #222;
+  /* box-shadow: 0px 3px #999; */
+}
+
+.btn-log{
+  border: 2px solid #222 !important;
+  background-color: #fff !important;
+  color: #222 !important;
+  font-weight: bold !important;
+  box-shadow: 0px 3px #999;
+  text-align: center;
+  width: 107px !important;
+}
+
+.btn-log-2{
+  border: 2px solid #222 !important;
+  background-color: #fff !important;
+  color: #222 !important;
+  font-weight: bold !important;
+  box-shadow: 0px 3px #999;
+  text-align: center;
+  width: 137px !important;
+}
+
+.btn-camera{
+  margin: 1px 15px;
+  height:50px;
+  width:50px;
+  border: 2px solid #222;
+  border-radius: 50%;
+  background-color: #fff;
+  color:#222;
+  /* outline: 1px solid gainsboro; */
+  text-align: center;
+  box-shadow: 0px 3px #999;
+}
+
+.btn-camera2{
+  margin: 1px 15px;
+  height: 37px !important;
+  width: 40px !important;
+  border: 1px solid #222;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #222;
+  /* outline: 1px solid gainsboro; */
+  text-align: center;
+  box-shadow: 0px 3px #999;
+}
+
+.btn-camera:active{
+  box-shadow: 0px 1px #222;
+  transform: translateY(2px);
+}
+
+.btn-camera2:active{
+  box-shadow: 0px 1px #222;
+  transform: translateY(2px);
+}
+
+.btn-camera .fa{
+  position: absolute;
+  text-align: center !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size:1.7em;
+}
+
+.btn-camera2 .fa{
+  position: absolute;
+  text-align: center !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size:1.4em;
+}
+
+#rf_logo{
+  font-size: 100px !important;
+}
+
+#mapid{
+  height:300px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1199px){
+  .btn-log-2{
+    width: 105px !important;
+    padding: .7rem 0.1rem !important;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .btn-camera{
+    margin: 1px 10px;
+    height: 45px;
+    width: 45px;
+  }
+
+  .btn-nav{
+    font-size: 10px;
+  }
+
+  .btn-camera .fa{
+    font-size: 1.4em;
+  }
+
+}
+
+@media screen and (max-width: 767px){
+  .btn-camera{
+    margin: 1px 10px;
+    height: 45px;
+    width: 45px;
+  }
+
+  .btn-camera .fa{
+    font-size: 1.4em;
+  }
+
+}
+
+@media screen and (max-width: 478px){
+  .btn-camera{
+    margin: 1px 10px;
+  }
+
+  .btn-camera .fa{
+    font-size: 1.4em;
+  }
+
+}
+
+@media screen and (max-width: 421px){
+  .btn-log{
+    padding: 0.7rem 0.6rem !important;
+    width: 95px !important;
+  }
+}
+
+@media screen and (max-width: 415px){
+  .btn-log-2{
+    width: 95px !important;
+    padding: .7rem 0.1rem !important;
+    font-size: 8px !important;
+  }
+}
+
+@media screen and (max-width: 385px){
+  .btn-log{
+    padding: 0.7rem 0.6rem !important;
+    width: 90px !important;
+  }
+
+  .btn-log-2{
+    width: 90px !important;
+    /* padding: .7rem 0.1rem !important; */
+    /* font-size: 8px !important; */
+  }
+}
+
+@media screen and (max-width: 370px){
+  .btn-log{
+    padding: 0.7rem 0.6rem !important;
+    width: 80px !important;
+  }
+
+  .btn-log-2{
+    width: 82px !important;
+    /* padding: .7rem 0.1rem !important; */
+    font-size: 7px !important;
+  }
+}
+
+@media screen and (max-width: 346px){
+  .btn-log-2{
+    width: 75px !important;
+    /* padding: .7rem 0.1rem !important; */
+    font-size: 6px !important;
+  }
+}
+
+@media screen and (max-width: 340px){
+  .btn-log{
+    padding: 0.7rem 0.1rem !important;
+    width: 75px !important;
+  }
+}
+
+@media screen and (max-width: 325px){
+  .btn-log-2{
+    width: 70px !important;
+    /* padding: .7rem 0.1rem !important; */
+    font-size: 5px !important;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .btn-log{
+    padding: 0.7rem 0.1rem !important;
+    width: 73px !important;
+  }
+}
+
+@media screen and (max-width: 394px){
+  .btn-camera{
+    margin: 1px 10px;
+  }
+
+  .btn-camera .fa{
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 344px){
+  .btn-nav{
+    font-size: 9px;
+  }
+
+  .btn-camera{
+    margin: 1px 8px;
+  }
+}
+
+
+
+@media screen and (max-width: 327px){
+  .btn-camera{
+    margin: 1px 6px;
+  }
+
+  .btn-camera .fa{
+    font-size: 1.4em;
+  }
+}

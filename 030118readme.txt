@@ -1,0 +1,21 @@
+need to add autoload model inside config/autoload.php
+need to change routes controller
+
+
+
+NOTE:
+relocate the `name_of_nav`_home.php into main_navigation folder
+
+
+
+http://localhost/jcw/Main_page/display_page/entity_home/Q2FxdUt6Ymp6eksyTU1RNy9aSHQrUT09
+
+
+
+kulang na db bago
+d.track_inventory_count -done
+
+8_supplierfiles need to import in existing db done
+
+
+fa-plus.

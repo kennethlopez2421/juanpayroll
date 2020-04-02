@@ -1,0 +1,16 @@
+SELECT drno, mm.fname, mm.mname, mm.lname, totalamt 
+FROM `8_directsalessummary` ds 
+LEFT JOIN `8_membermain` mm ON mm.idno = ds.idno 
+WHERE `trandate` = '2017-12-01'
+
+
+
+how to get the 2nd table
+
+1st step = from sa query na cnend ko, mkukuha mo na "drno" tama
+2nd step = ung "drno", ichcheck mo cya sa 8_customeraccountallocation as allocrefid where allocreftype = 'DR'
+3rd step = mkukuha mo ung refid nya... ung refid from 8_customeraccountallocation, kukunin sa 8_drpayments as id
+4th step = edi nasa 8_drpayments kna. meron jan 'payamt' na field un ung binayad para malaman mo anong paymenttype, check mo ung 'paymenttype' sa 8_payment as id for example, 57 = cash, 58 = check, 59 = online/bank deposit
+
+2nd Query
+SELECT payamt, description FROM 8_customeraccountallocation caa LEFT JOIN 8_drpayments drp ON caa.refid = drp.id LEFT JOIN 8_payment pa ON pa.id = drp.paymenttype WHERE caa.allocrefid = '275418' AND caa.allocreftype = 'DR'

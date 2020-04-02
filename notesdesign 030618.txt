@@ -1,0 +1,70 @@
+"columnDefs": [
+    		{ targets: 1, orderable: false, "sClass":"text-center" }
+		]
+
+
+
+refix to custom.css
+
+-change
+input.form-control {
+    padding: 8px 15px;
+}
+
+-add
+.mar_minus_25{
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+----------------------------------------
+add this on every controller
+
+public function logout() {
+        $this->session->sess_destroy();
+        $this->load->view('login');
+    }
+
+----------------------------------------
+inventory_pricing_list.php
+
+line 26: <div class="row mar_minus_25   ">
+
+\\ <button type="button" style="right:20px; position: absolute; top:20px;" class="btn btn-default btnCPsearch btn-primary">Search</button>
+
+----------------------------------------
+inventory_pricing_list.js
+
+line 8: "columnDefs": [
+    		{ targets: 4, orderable: false, "sClass":"text-center"}
+		],
+----------------------------------------
+Model
+
+
+----------------------------------------
+Fotter 
+http://cloudpanda.ph/
+
+----------------------------------------
+inventory_pricing_list_prices.js
+
+line 8: "columnDefs": [
+    		{ targets: 4, orderable: false, "sClass":"text-center" }
+		],
+----------------------------------------
+Model_inventory.php
+
+line 310: "fa-pencil" icon change into "fa-edit"
+line 311: "fa-remove" icon change into "fa-trash-o"
+
+----------------------------------------
+inventory_pricing_list_prices.php
+
+line 27: <div class="row mar_minus_25">
+
+----------------------------------------
+inventory_list.php
+
+line 27: <div class="row mar_minus_25">
+----------------------------------------

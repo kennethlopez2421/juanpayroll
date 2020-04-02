@@ -1,0 +1,5 @@
+superuser - superpassword123
+admin - Testadmin123
+accounting - accounting123
+bddadmin - businessdevdept
+mmdadmin - inventory123
